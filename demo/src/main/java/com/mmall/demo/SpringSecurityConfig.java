@@ -1,5 +1,6 @@
 package com.mmall.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -12,15 +13,23 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    @Autowired
+    private MyUserService myUserService;
+
     // Spring Security提供了一套基于内存的验证
     // 告诉系统内存里有一个用户
-
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("admin").password(new BCryptPasswordEncoder().encode("123456")).roles("ADMIN");
-        auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("chen").password(new BCryptPasswordEncoder().encode("chen")).roles("ADMIN");
-        auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("demo").password(new BCryptPasswordEncoder().encode("demo")).roles("USER");
+//        auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("admin").password(new BCryptPasswordEncoder().encode("123456")).roles("ADMIN");
+//        auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("chen").password(new BCryptPasswordEncoder().encode("chen")).roles("ADMIN");
+//        auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("demo").password(new BCryptPasswordEncoder().encode("demo")).roles("USER");
+
+        // 在auth里指定使用的userService,相当于auth在进行管理时，可以去自己定义的UserService里进行管理
+        auth.userDetailsService(myUserService).passwordEncoder(new MyPasswordEncoder());
+
+        // SpringSecurity在数据库中支持一套默认的数据库验证
+        auth.jdbcAuthentication().usersByUsernameQuery("").authoritiesByUsernameQuery("")
+                .passwordEncoder(new MyPasswordEncoder());
     }
 
     // 定义规则: 决定哪些请求会被拦截以及一些请求如何被处理
