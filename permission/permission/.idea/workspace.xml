@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7c183a8-24dc-46a4-9e9b-73085d129b8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../demo2/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo2/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/settings.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo2/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +31,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="21I229gH0fn7g6KAuUi1I9C11Ye" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,7 +82,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637614076618</updated>
-      <workItem from="1637614078459" duration="5578000" />
+      <workItem from="1637614078459" duration="5931000" />
+      <workItem from="1638197288577" duration="916000" />
+      <workItem from="1638212978417" duration="11857000" />
     </task>
     <servers />
   </component>
