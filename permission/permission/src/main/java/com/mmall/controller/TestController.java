@@ -14,7 +14,6 @@ public class TestController {
     @ResponseBody
     public String hello() {
         log.info("hello");
-        return "hello, permissions";
+        return "hello, permission";
     }
-
 }
