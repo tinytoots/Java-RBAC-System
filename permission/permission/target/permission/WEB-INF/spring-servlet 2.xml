@@ -15,7 +15,7 @@
     <context:component-scan base-package="com.mmall.service" />
 
     <!-- 当定义一个SpringMVC接口的时候，会使用request mapping这个注解。RequestMappingHandlerMapping就是把定义好的Request Mapping的注解能找到对应的接口来进行处理。相当于告诉请求使用什么样的代码来处理  -->
-<!--    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />-->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
     <!-- 告诉SpringMVC项目，当请求到来的时候，以什么样的格式数据返回给他，比如返回json还是jsp页面 -->
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
 
