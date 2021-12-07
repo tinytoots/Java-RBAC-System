@@ -10,7 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7c183a8-24dc-46a4-9e9b-73085d129b8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/HttpInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/SysDeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dto/DeptLevelDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/param/DeptParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysTreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/util/LevelUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../demo2/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/model/Permission.java" afterDir="false" />
@@ -20,55 +25,10 @@
       <change beforePath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/java/com/mmall2/demo2/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../demo2/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo2/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/common/ApplicationContextHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/ApplicationContextHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/common/JsonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/JsonData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/param/TestVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/param/TestVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext 5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/common/JsonData 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/common/SpringExceptionResolver 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/common/SpringExceptionResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mmall/common/SpringExceptionResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/controller/TestController 5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mmall/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysAclMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysAclModuleMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysDeptMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysLogMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysRoleAclMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysRoleMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysRoleUserMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/SysUserMapper 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/TestDao 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/exception/PermissionException 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysAcl 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysAclModule 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysDept 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysLog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysLogWithBLOBs 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysRole 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysRoleAcl 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysRoleUser 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/model/SysUser 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/param/TestVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mmall/param/TestVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/util/BeanValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mmall/util/BeanValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback 5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysAclMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysAclModuleMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysDeptMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysLogMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysRoleAclMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysRoleMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysRoleUserMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysUserMapper 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TestMapper 5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config 5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/settings 5.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/common/SpringExceptionResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/common/SpringExceptionResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/param/TestVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/param/TestVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/util/BeanValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/com/mmall/util/BeanValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/spring-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysDeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysDeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysDeptMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +212,7 @@
       <workItem from="1638686444421" duration="3970000" />
       <workItem from="1638803033654" duration="4072000" />
       <workItem from="1638807284896" duration="16687000" />
-      <workItem from="1638890885295" duration="6966000" />
+      <workItem from="1638890885295" duration="17250000" />
     </task>
     <servers />
   </component>
