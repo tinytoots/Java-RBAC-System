@@ -2,6 +2,7 @@ package com.mmall.controller;
 
 import com.mmall.common.JsonData;
 import com.mmall.dto.DeptLevelDto;
+import com.mmall.exception.PermissionException;
 import com.mmall.param.DeptParam;
 import com.mmall.service.SysDeptService;
 import com.mmall.service.SysTreeService;
@@ -17,6 +18,7 @@ import java.util.List;
 @RequestMapping("/sys/dept")
 @Slf4j
 public class SysDeptController {
+
     @Resource
     private SysDeptService sysDeptService;
     @Resource

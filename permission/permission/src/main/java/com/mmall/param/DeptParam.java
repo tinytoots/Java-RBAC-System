@@ -20,14 +20,12 @@ public class DeptParam {
     private String name;
 
     // 上一级部门id
-    private Integer parentId;
+    private Integer parentId = 0;
 
     @NotNull(message = "展示顺序不可以为空")
     private Integer seq;
 
     @Length(max = 150, message = "备注的长度不能超过150个字")
     private String remark;
-
-
 
 }
